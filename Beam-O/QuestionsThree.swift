@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct QuestionsThree: View {
+    @Environment (Application.self) private var app
+    
     let VPW = UIScreen.main.bounds.size.width
     let VPH = UIScreen.main.bounds.size.height
     
@@ -32,7 +34,9 @@ struct QuestionsThree: View {
                     }
                 }
                 Spacer()
-                ButtonComponentTwo(label: "NEXT")
+                ButtonComponentTwo(label: "NEXT") {
+                    app.path.append(3)
+                }
             }
             .padding(20)
         }

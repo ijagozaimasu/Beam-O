@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeEmpty: View {
+    @Environment (Application.self) private var app
+    
     let VPW = UIScreen.main.bounds.size.width
     let VPH = UIScreen.main.bounds.size.height
     
@@ -25,7 +27,9 @@ struct HomeEmpty: View {
                         .multilineTextAlignment(.center)
                 }
                 Spacer()
-                ButtonComponentTwo(label: "GET STARTED")
+                ButtonComponentTwo(label: "GET STARTED") {
+                    app.path.append(0)
+                }
                 
             }
             .padding(20)

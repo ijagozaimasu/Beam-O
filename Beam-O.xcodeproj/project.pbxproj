@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6813CE022BEB79610021EE91 /* PracticeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6813CE012BEB79610021EE91 /* PracticeOne.swift */; };
 		683DB9692BDB99620084F48A /* Beam_OApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683DB9682BDB99620084F48A /* Beam_OApp.swift */; };
 		683DB96B2BDB99620084F48A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683DB96A2BDB99620084F48A /* ContentView.swift */; };
 		683DB96D2BDB99640084F48A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683DB96C2BDB99640084F48A /* Assets.xcassets */; };
@@ -40,9 +41,11 @@
 		688203392BE33AF300EA8D9A /* SummaryOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688203382BE33AF300EA8D9A /* SummaryOne.swift */; };
 		6882033B2BE33C6400EA8D9A /* ButtonComponentThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882033A2BE33C6400EA8D9A /* ButtonComponentThree.swift */; };
 		6882033D2BE3491300EA8D9A /* InfoBoxOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882033C2BE3491300EA8D9A /* InfoBoxOne.swift */; };
+		688203412BE397F400EA8D9A /* ButtonComponentFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688203402BE397F400EA8D9A /* ButtonComponentFour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6813CE012BEB79610021EE91 /* PracticeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeOne.swift; sourceTree = "<group>"; };
 		683DB9652BDB99620084F48A /* Beam-O.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beam-O.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		683DB9682BDB99620084F48A /* Beam_OApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beam_OApp.swift; sourceTree = "<group>"; };
 		683DB96A2BDB99620084F48A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		688203382BE33AF300EA8D9A /* SummaryOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryOne.swift; sourceTree = "<group>"; };
 		6882033A2BE33C6400EA8D9A /* ButtonComponentThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponentThree.swift; sourceTree = "<group>"; };
 		6882033C2BE3491300EA8D9A /* InfoBoxOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBoxOne.swift; sourceTree = "<group>"; };
+		688203402BE397F400EA8D9A /* ButtonComponentFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponentFour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		682C8DC72BE8D0D400AC47A1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				6882032A2BE26A8C00EA8D9A /* ButtonComponentOne.swift */,
+				6882032C2BE26CE300EA8D9A /* ButtonComponentTwo.swift */,
+				6882033A2BE33C6400EA8D9A /* ButtonComponentThree.swift */,
+				688203402BE397F400EA8D9A /* ButtonComponentFour.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		683DB95C2BDB99620084F48A = {
 			isa = PBXGroup;
 			children = (
+				6813CE012BEB79610021EE91 /* PracticeOne.swift */,
 				683DB9672BDB99620084F48A /* Beam-O */,
 				683DB9662BDB99620084F48A /* Products */,
 			);
@@ -127,9 +143,7 @@
 				688203382BE33AF300EA8D9A /* SummaryOne.swift */,
 				683DB9782BDCA84E0084F48A /* TextHeadlineOne.swift */,
 				683DB9A02BDCB2A20084F48A /* TextHeadlineTwo.swift */,
-				6882032A2BE26A8C00EA8D9A /* ButtonComponentOne.swift */,
-				6882032C2BE26CE300EA8D9A /* ButtonComponentTwo.swift */,
-				6882033A2BE33C6400EA8D9A /* ButtonComponentThree.swift */,
+				682C8DC72BE8D0D400AC47A1 /* New Group */,
 				688203342BE2744600EA8D9A /* TextFieldOne.swift */,
 				6882033C2BE3491300EA8D9A /* InfoBoxOne.swift */,
 			);
@@ -260,11 +274,13 @@
 				6882033D2BE3491300EA8D9A /* InfoBoxOne.swift in Sources */,
 				683DB99D2BDCB06B0084F48A /* HomeEmpty.swift in Sources */,
 				683DB9992BDCAF1D0084F48A /* SplashScreen.swift in Sources */,
+				6813CE022BEB79610021EE91 /* PracticeOne.swift in Sources */,
 				6882032D2BE26CE300EA8D9A /* ButtonComponentTwo.swift in Sources */,
 				688203352BE2744600EA8D9A /* TextFieldOne.swift in Sources */,
 				688203372BE2851400EA8D9A /* QuestionsFour.swift in Sources */,
 				688203292BE0E0C800EA8D9A /* QuestionsOne.swift in Sources */,
 				683DB96B2BDB99620084F48A /* ContentView.swift in Sources */,
+				688203412BE397F400EA8D9A /* ButtonComponentFour.swift in Sources */,
 				683DB9792BDCA84E0084F48A /* TextHeadlineOne.swift in Sources */,
 				6882032B2BE26A8C00EA8D9A /* ButtonComponentOne.swift in Sources */,
 				683DB9772BDCA6F10084F48A /* component.swift in Sources */,

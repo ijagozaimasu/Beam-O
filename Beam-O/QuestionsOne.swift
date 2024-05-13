@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct QuestionsOne: View {
+    @Environment (Application.self) private var app
+    
     let VPW = UIScreen.main.bounds.size.width
     let VPH = UIScreen.main.bounds.size.height
     
@@ -19,13 +21,21 @@ struct QuestionsOne: View {
                     TextHeadlineTwo(text: "What’s your goal?")
                         .foregroundColor(.fontcolortwo)
                     VStack (spacing: 16) {
-                        ButtonComponentOne(label: "Lose Weight")
-                        ButtonComponentOne(label: "Maintain Weight")
-                        ButtonComponentOne(label: "Gain Weight")
+                        ButtonComponentOne(label: "Lose Weight", active: app.goal == .lose) {
+                            app.goal = .lose
+                        }
+                        ButtonComponentOne(label: "Maintain Weight", active: app.goal == .maintain) {
+                            app.goal = .maintain
+                        }
+                        ButtonComponentOne(label: "Gain Weight", active: app.goal == .gain) {
+                            app.goal = .gain
+                        }
                     }
                 }
                 Spacer()
-                ButtonComponentTwo(label: "NEXT")
+                ButtonComponentTwo(label: "NEXT") {
+                    app.path.append(1)
+                }
                 
             }
             .padding(20)

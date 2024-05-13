@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct QuestionsTwo: View {
+    @Environment (Application.self) private var app
+    
     let VPW = UIScreen.main.bounds.size.width
     let VPH = UIScreen.main.bounds.size.height
     
@@ -19,13 +21,18 @@ struct QuestionsTwo: View {
                     TextHeadlineTwo(text: "What’s your gender?")
                         .foregroundColor(.fontcolortwo)
                     VStack (spacing: 16) {
-                        ButtonComponentOne(label: "Male")
-                        ButtonComponentOne(label: "Female")
+                        ButtonComponentOne(label: "Male", active: app.gender == .male) {
+                            app.gender = .male
+                        }
+                        ButtonComponentOne(label: "Female", active: app.gender == .female) {
+                            app.gender = .female
+                        }
                     }
                 }
                 Spacer()
-                ButtonComponentTwo(label: "NEXT")
-                
+                ButtonComponentTwo(label: "NEXT") {
+                    app.path.append(2)
+                }
             }
             .padding(20)
         }

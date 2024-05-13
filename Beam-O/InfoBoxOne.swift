@@ -15,7 +15,7 @@ struct InfoBoxOne: View {
     let VPW = UIScreen.main.bounds.size.width
     
     var body: some View {
-        VStack (alignment: .leading, spacing: 12){
+        VStack (alignment: .leading, spacing: 18){
             Text(label)
                 .foregroundStyle(.fontcolortwo)
                 .bold()
