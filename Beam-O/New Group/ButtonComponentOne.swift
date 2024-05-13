@@ -9,12 +9,18 @@ import SwiftUI
 
 struct ButtonComponentOne: View {
     let label: String
+    let active: Bool
+    let action: (() -> Void)?
+    
     var body: some View {
         Button {
+            if let action {
+                action()
+            }
             //disini nanti tulis fungsi
         } label: {
             RoundedRectangle(cornerRadius: 10)
-                .fill(.white)
+                .fill(active ? .secondarycolor : .white)
                 .frame(height:80)
                 .overlay(
                     Text(label)
@@ -28,5 +34,7 @@ struct ButtonComponentOne: View {
 }
 
 #Preview {
-    ButtonComponentOne(label: "Weight")
+    ButtonComponentOne(label: "Weight", active: false) {
+        print("test")
+    }
 }

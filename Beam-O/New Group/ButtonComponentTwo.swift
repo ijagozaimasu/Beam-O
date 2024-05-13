@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ButtonComponentTwo: View {
     let label: String
+    
+    let action: (() -> Void)?
+    
     var body: some View {
         Button {
+            if let action {
+                action()
+            }
             //disini nanti tulis fungsi
         } label: {
             RoundedRectangle(cornerRadius: 10)
@@ -26,5 +32,7 @@ struct ButtonComponentTwo: View {
 }
 
 #Preview {
-    ButtonComponentTwo(label: "hello")
+    ButtonComponentTwo(label: "hello") {
+        print("test")
+    }
 }
